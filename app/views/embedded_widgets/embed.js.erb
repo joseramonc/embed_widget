@@ -1,0 +1,7 @@
+window.onload = function(){
+  var body = document.querySelector('body');
+  body.insertAdjacentHTML(
+    'beforeend',
+    '<div style="position: fixed; background-color: #E4292C; color: white; bottom: 30px; right: 30px; padding: 5px; border-radius: 3px;"><%= @widget.injected_content -%></div>'
+  );
+}

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= embed_widget_url(@widget, url: @widget.url, format: :js) %>
+</p>
+
+<p>
+  <strong>URL:</strong>
+  <%= @widget.url %>
+</p>
+
+<p>
+  <strong>Injected Content:</strong>
+  <%= @widget.injected_content %>
+</p>
+
+<pre>
+  <code>
+    &lt;script type="text/javascript" src="<%= embed_widget_url(@widget, url: @widget.url, format: :js) %>"&gt;&lt;/script&gt;
+  </code>
+</pre>
+
+<%= link_to 'Edit', edit_widget_path(@widget) %> |
+<%= link_to 'Back', widgets_path %>

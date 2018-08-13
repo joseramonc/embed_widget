@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+After setting up the app, you'll be able to create widgets with custom content that could be embedded in external sites. The widgets will include custom content
 
-Things you may want to cover:
+index.html is a plain bootstrap template that I used to embed widgets.
 
-* Ruby version
+## Setup
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+bundle install
+bundle exec rails db:create
+bundle exec rails db:migrate
+```
